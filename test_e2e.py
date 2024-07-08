@@ -11,6 +11,9 @@ class TestOne(BaseClass):
     def test_e2e(self):
         homePage = HomePage(self.driver)
         homePage.shopItems().click()  # Click on shop button
+        print("Update Command 1")
+        print("Update Command 2")
+        print("Update Command 3")
 
         checkoutPage = CheckoutPage(self.driver)
         products = checkoutPage.getCardTitles()  # Get all product cards
@@ -43,3 +46,6 @@ class TestOne(BaseClass):
             EC.visibility_of_element_located((By.XPATH, "//div[@class='alert alert-success alert-dismissible']"))).text
         print(success_message)
         assert 'Success! Thank you!' in success_message
+        print("Update Command 1")
+        print("Update Command 2")
+        print("Update Command 3")
