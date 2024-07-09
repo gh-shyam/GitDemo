@@ -8,6 +8,7 @@ from utilities.BaseClass import BaseClass
 
 class TestOne(BaseClass):
 
+
     def test_e2e(self):
         homePage = HomePage(self.driver)
         homePage.shopItems().click()  # Click on shop button
@@ -34,7 +35,8 @@ class TestOne(BaseClass):
 
         print(self.driver.title)
 
-        self.driver.find_element(By.ID, "country").send_keys('India')  # Enter country name
+        self.driver.find_el
+        ement(By.ID, "country").send_keys('India')  # Enter country name
 
         wait = WebDriverWait(self.driver, 10)
         wait.until(EC.presence_of_element_located((By.LINK_TEXT, "India")))  # Wait for country suggestion to appear
