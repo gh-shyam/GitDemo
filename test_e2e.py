@@ -52,3 +52,5 @@ class TestOne(BaseClass):
         print("Update Command 1")
         print("Update Command 2")
         print("Update Command 3")
+        print("Update Command develop branch")
+        print("Update Command develop branch")
